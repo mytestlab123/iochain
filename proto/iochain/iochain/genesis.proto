@@ -1,0 +1,14 @@
+syntax = "proto3";
+package mytestlab123.iochain.iochain;
+
+import "gogoproto/gogo.proto";
+import "iochain/iochain/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/mytestlab123/iochain/x/iochain/types";
+
+// GenesisState defines the iochain module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}
